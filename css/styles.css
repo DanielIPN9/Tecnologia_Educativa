@@ -1,0 +1,602 @@
+/*Configuraciones generales*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /** Resent para REms -> 62.5% = 10px de 16px **/
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    /*background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+    background-blend-mode: multiply, multiply;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);*/
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+    /*background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+    background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);*/
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 16px;
+    line-height: 2;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+h5 {
+    font-size: 1.7rem;
+}
+
+
+/*Utilidades*/
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.contenido-centrado {
+    max-width: 800px;
+}
+
+.d-block {
+    display: block!important;
+}
+
+
+/*Pagina principal*/
+
+.cuerpo-page-principal {
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.50) 50%);
+    background-blend-mode: soft-light, screen;
+    /*background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;*/
+}
+
+.texto-principal p {
+    font-size: 1.8rem;
+}
+
+.texto-principal h1 {
+    text-align: center;
+}
+
+
+/*Carrusel INICIO*/
+
+.contenedor-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slidershow {
+    max-width: 3000px;
+    width: 60%;
+    overflow: hidden;
+}
+
+.middle {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 5%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid rgb(177, 173, 173);
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover {
+    background: #fff;
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked~.s1 {
+    margin-left: 0;
+}
+
+#r2:checked~.s1 {
+    margin-left: -20%;
+}
+
+#r3:checked~.s1 {
+    margin-left: -40%;
+}
+
+#r4:checked~.s1 {
+    margin-left: -60%;
+}
+
+#r5:checked~.s1 {
+    margin-left: -80%;
+}
+
+
+/*Carrusel ----> FINAL*/
+
+
+/*Header General*/
+
+.site-heder-G-2 {
+    background-image: url(../img/cafe-lentes-1280x850.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40vh;
+}
+
+.img-container-G img {
+    width: 40rem;
+    height: 18rem;
+}
+
+
+/*Header Principal*/
+
+.site-heder {
+    background-image: url(../img/fondo_3.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40vh;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: space-around;
+}
+
+.contenedor {
+    max-width: 125rem;
+    margin: auto auto;
+}
+
+.img-container {
+    width: 50rem;
+    height: 38rem;
+}
+
+.img-container-2 img {
+    width: 20rem;
+    height: 20rem;
+}
+
+
+/** Navegación Responsive **/
+
+.barra {
+    overflow: hidden;
+}
+
+.mobile-menu {
+    color: #ffffff;
+    font-size: 1.8rem;
+    text-align: center;
+    display: block;
+    padding: 20px 0;
+}
+
+#nav:target {
+    max-height: 800px;
+}
+
+.navegacion-principal {
+    max-height: 0;
+    transition: .5s;
+}
+
+@media (min-width:1000px) {
+    .navegacion-principal {
+        max-height: unset;
+    }
+    .mobile-menu,
+    .cerrar {
+        text-align: center;
+        display: none!important;
+    }
+}
+
+
+/*Navegacion principal*/
+
+.barra {
+    background-color: #333333;
+}
+
+.navegacion-principal a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (min-width:1000px) {
+    .navegacion-principal a {
+        display: inline-block;
+    }
+}
+
+.navegacion-principal a:hover {
+    background-color: #00B8E4;
+}
+
+
+/*Contenido Contacto*/
+
+.contenido {
+    text-align: justify;
+}
+
+.marco {
+    max-width: 650px;
+    padding: 20px;
+    margin: 30px auto;
+    background-color: #E7EBDA;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.image-cuerpo {
+    padding-bottom: 2rem;
+    max-width: 65rem;
+    max-height: 75rem;
+}
+
+.centrado {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto-contacto {
+    font-size: 2rem;
+}
+
+
+/*Contenido cursos*/
+
+.contenido-curso {
+    display: flex;
+    justify-content: space-between;
+}
+
+.marco-horario {
+    width: 500px;
+    padding: 20px;
+    background-color: #d8bfd8;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.contenido-horarios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccion-data {
+    flex-basis: calc(33.3% - 1rem);
+}
+
+.image-curso {
+    padding-bottom: 2rem;
+    max-width: 15rem;
+    max-height: 25rem;
+}
+
+.titulo-grupo {
+    font-size: 2rem;
+}
+
+
+/*Contenido Recursos didacticos*/
+
+
+/* ---> Inicio: Apartado estilo para listas*/
+
+#lista3 {
+    counter-reset: li;
+    list-style: none;
+    *list-style: square;
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+
+#lista3 ol {
+    margin: 0 0 0 2rem;
+}
+
+#lista3 li {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    *padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+#lista3 li:hover {
+    background: #eee;
+}
+
+#lista3 li:before {
+    content: counter(ol);
+    counter-increment: li;
+    position: absolute;
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #fa8072;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#lista3 li:after {
+    position: absolute;
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;
+}
+
+#lista3 li:hover:after {
+    left: -.5em;
+    border-left-color: #fa8072;
+}
+
+
+/* ---> Fin: Apartado estilo para listas*/
+
+.enlace-descarga a {
+    color: #0f0f0f;
+    text-decoration: underline;
+    font-size: 1.8rem;
+}
+
+.enlace-descarga a:hover {
+    color: rgba(223, 24, 51, 0.603);
+}
+
+.fondo-enlacesE {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    background-color: rgba(74, 139, 137, 0.651);
+    margin: 1rem 0 1rem 0;
+    border-radius: 2.5rem;
+}
+
+.fondo-enlacesE:hover {
+    background-color: rgba(75, 128, 126, 0.651);
+    transition: all .3s ease-out;
+}
+
+.fondo-enlacesE a {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.fondo-enlacesE a:hover {
+    color: rgb(244, 242, 248);
+}
+
+
+/* Publicaciones*/
+
+.cuerpor-publicacion {
+    max-width: 60rem;
+    display: flex;
+}
+
+.titulo-publicacion {
+    flex-basis: 60%;
+}
+
+.titulo-publicacion h4::after {
+    content: '';
+    display: block;
+    margin-top: 1rem;
+    width: 28rem;
+    height: .5rem;
+    background-color: brown;
+}
+
+.fecha-publicacion {
+    max-width: 30rem;
+    flex-basis: calc(40%);
+}
+
+.fecha-publicacion p::after {
+    content: '';
+    display: block;
+    width: 25rem;
+    height: .5rem;
+    background-color: rgb(172, 201, 44);
+}
+
+@media (max-width: 620px) {
+    .fecha-publicacion p::after {
+        content: '';
+        display: block;
+        width: 16rem;
+        height: .5rem;
+        background-color: rgb(172, 201, 44);
+    }
+}
+
+.texto-publicacion p {
+    margin: 0 0 2rem 0;
+    background-color: #d1d1b5d8;
+    border-radius: 1.2rem;
+    font-size: 1.8rem;
+}
+
+
+/*Pryectos de investigacion*/
+
+.contenedor-proyectos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.proyecto {
+    flex: 0 0 calc(33.3% - 1rem);
+    border: 3px solid #b6a9a9;
+    background: #cec0c0;
+    margin-bottom: 2rem;
+}
+
+.contenido-proyecto {
+    padding: 2rem;
+}
+
+.contenido-proyecto p {
+    font-size: 2rem;
+}
+
+.contenido-proyecto p::after {
+    content: '';
+    display: block;
+    width: 18rem;
+    height: .5rem;
+    background-color: rgb(80, 63, 17);
+    margin-top: 1rem;
+}
+
+
+/*Colaboradores*/
+
+.cuerpo-perfil {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagen-perfil {
+    flex-basis: 30%;
+}
+
+.imagen-perfil img {
+    width: 150px;
+    height: 150px;
+}
+
+.info-perfil {
+    flex-basis: calc(70% - 2rem);
+}
+
+.info-perfil {
+    text-align: left;
+}
+
+.info-perfil p {
+    font-size: 1.8rem;
+}
+
+.caja-perfil {
+    color: #0c0c0c;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    background: #889ccf;
+    margin: 0 0 25px;
+    padding: 20px;
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 2px solid #5878ca;
+}
+
+
+/*Footer general*/
+
+.site-footer {
+    padding-top: 2rem;
+    margin-top: 6rem;
+    background-color: #333333;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.copyright {
+    margin: 0;
+    color: cornsilk;
+}
