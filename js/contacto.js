@@ -3,7 +3,7 @@ const contacto = {
     profesor: "Carlos de la Cruz Sosa",
     grado: "M. en C.",
     departamento: "Jefe de Lab. de Telemática II",
-    horarioAtencion: "Sin asignar",
+    horarioAtencion: "En espera de asignación",
     correo: "cdelacruzupiita@gmail.com"
 };
 
