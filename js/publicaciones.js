@@ -1,9 +1,15 @@
 const pubicaciones = [
 
     {
-        tituloP: "Inicio semestre",
-        fechaP: "15/01/2020",
-        descripcion: "Bienvenidos a un nuevo ciclo escolar"
+        tituloP: "Página terminada",
+        fechaP: "31/01/2020",
+        descripcion: "Mensaje de prueba para despliegue en servidor con una conexión con GitHub"
+    },
+
+    {
+        tituloP: "Examen primer parcial de telematica",
+        fechaP: "dd/mm/aaaa",
+        descripcion: "El examen de la materia será para el día DD/MM/AAAA, presentarse 5min antes."
     },
 
     {
