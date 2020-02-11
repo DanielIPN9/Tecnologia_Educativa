@@ -6,17 +6,6 @@ const pubicaciones = [
         descripcion: "Mensaje de prueba para despliegue en servidor con una conexión con GitHub"
     },
 
-    {
-        tituloP: "Examen primer parcial de telematica",
-        fechaP: "dd/mm/aaaa",
-        descripcion: "El examen de la materia será para el día DD/MM/AAAA, presentarse 5min antes."
-    },
-
-    {
-        tituloP: "Examen primer parcial de telematica",
-        fechaP: "dd/mm/aaaa",
-        descripcion: "El examen de la materia será para el día DD/MM/AAAA, presentarse 5min antes."
-    },
 ];
 
 
